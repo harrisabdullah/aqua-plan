@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"623ff52b634996e9","x":-140,"y":-400,"width":250,"height":60,"type":"text","text":"user asks a question"},
+		{"id":"1e143b90e7dfe337","x":-420,"y":-200,"width":250,"height":60,"type":"text","text":"question analysis "},
+		{"id":"6f6b1788f61385da","x":-420,"y":-100,"width":250,"height":250,"type":"text","text":"generating structure: \n- how long should the response be? \n- are images or diagrams needed?\n- is math needed?\n- sectioning "},
+		{"id":"5cc9c0dd7e37c274","x":140,"y":-200,"width":250,"height":60,"type":"text","text":"search engine"},
+		{"id":"e4213ad2d7a958f2","x":140,"y":-100,"width":250,"height":60,"type":"text","text":"repubility ranking "},
+		{"id":"53c7e1204a47fd50","x":140,"y":0,"width":250,"height":60,"type":"text","text":"infomation compression per page"},
+		{"id":"bda446abbf292643","x":140,"y":90,"width":250,"height":60,"type":"text","text":"summarising repeated information "},
+		{"id":"6105764f406bd191","x":-140,"y":300,"width":250,"height":60,"type":"text","text":"final page generation "},
+		{"id":"ef364003851021ee","x":140,"y":300,"width":250,"height":60,"type":"text","text":"more info needed"},
+		{"id":"1afeea81401bfe0b","x":140,"y":400,"width":250,"height":60,"type":"text","text":"generate question"},
+		{"id":"5823af7b71732189","x":-140,"y":400,"width":250,"height":60,"type":"text","text":"inserting images or math as required."},
+		{"id":"3e8bad0e0ab0792f","x":-140,"y":520,"width":250,"height":50,"type":"text","text":"output"},
+		{"id":"75b014a6902fc1ba","x":-140,"y":-200,"width":250,"height":180,"type":"text","text":"User data:\n\n- education level\n- understanding of topic\n- age"}
+	],
+	"edges":[
+		{"id":"9f15095ce3f02384","fromNode":"623ff52b634996e9","fromSide":"bottom","toNode":"1e143b90e7dfe337","toSide":"top"},
+		{"id":"5783a755a1a29146","fromNode":"623ff52b634996e9","fromSide":"bottom","toNode":"5cc9c0dd7e37c274","toSide":"top"},
+		{"id":"bd1a191d3ed05596","fromNode":"1e143b90e7dfe337","fromSide":"bottom","toNode":"6f6b1788f61385da","toSide":"top"},
+		{"id":"46603b4c55d0ff36","fromNode":"5cc9c0dd7e37c274","fromSide":"bottom","toNode":"e4213ad2d7a958f2","toSide":"top"},
+		{"id":"a641c5a726212663","fromNode":"75b014a6902fc1ba","fromSide":"bottom","toNode":"53c7e1204a47fd50","toSide":"left"},
+		{"id":"2cfd21331380c0c2","fromNode":"e4213ad2d7a958f2","fromSide":"bottom","toNode":"53c7e1204a47fd50","toSide":"top"},
+		{"id":"3dc7d650cccea491","fromNode":"6f6b1788f61385da","fromSide":"bottom","toNode":"6105764f406bd191","toSide":"top"},
+		{"id":"7bf57f4a5cc4b48e","fromNode":"5823af7b71732189","fromSide":"bottom","toNode":"3e8bad0e0ab0792f","toSide":"top"},
+		{"id":"f8336f0ab14ec358","fromNode":"53c7e1204a47fd50","fromSide":"bottom","toNode":"bda446abbf292643","toSide":"top"},
+		{"id":"31ffabfa8c8b8cdb","fromNode":"bda446abbf292643","fromSide":"bottom","toNode":"6105764f406bd191","toSide":"top"},
+		{"id":"273a2f54f58aa3b9","fromNode":"6105764f406bd191","fromSide":"right","toNode":"ef364003851021ee","toSide":"left"},
+		{"id":"19aea88933c65b2c","fromNode":"ef364003851021ee","fromSide":"bottom","toNode":"1afeea81401bfe0b","toSide":"top"},
+		{"id":"ce3752a5c753f96f","fromNode":"1afeea81401bfe0b","fromSide":"right","toNode":"5cc9c0dd7e37c274","toSide":"right"},
+		{"id":"ea2430a2df1393ab","fromNode":"6105764f406bd191","fromSide":"bottom","toNode":"5823af7b71732189","toSide":"top"},
+		{"id":"f4839a3b0b5a0cfb","fromNode":"75b014a6902fc1ba","fromSide":"top","toNode":"1e143b90e7dfe337","toSide":"top"}
+	]
+}
